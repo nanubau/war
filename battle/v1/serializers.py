@@ -1,7 +1,7 @@
-from django.contrib.auth.models import User, Group
+# from django.contrib.auth.models import User, Group
 from rest_framework import serializers
 from battle.models import Battle
-from rest_framework_mongoengine.serializers import DocumentSerializer
+# from rest_framework_mongoengine.serializers import DocumentSerializer
 
 # class BattleSerializer(DocumentSerializer):
 #     class Meta:
@@ -9,8 +9,6 @@ from rest_framework_mongoengine.serializers import DocumentSerializer
 #     	serializers = ('name','year','battle_number','attacker_king','defender_king','attacker_1','attacker_2','attacker_3','attacker_4','defender_1','defender_2','defender_3','defender_4','attacker_outcome','battle_type','major_death','major_capture','attacker_size','defender_size','attacker_commander','defender_commander','summer','location','region','note')
 
 # from rest_framework import serializers
-
-
 
 class BattleSerializer(serializers.Serializer):
 
